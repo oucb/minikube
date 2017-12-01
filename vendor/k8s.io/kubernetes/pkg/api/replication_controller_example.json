@@ -47,7 +47,7 @@
                 "containers": [
                     {
                         "name": "elasticsearch-logging",
-                        "image": "oucb/elasticsearch:1.0",
+                        "image": "registry.cn-shenzhen.aliyuncs.com/oucb/elasticsearch:1.0",
                         "ports": [
                             {
                                 "name": "db",

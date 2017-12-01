@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
       - name: fluentd-es
-        image: oucb/fluentd-elasticsearch:v2.0.2
+        image: registry.cn-shenzhen.aliyuncs.com/oucb/fluentd-elasticsearch:v2.0.2
         env:
         - name: FLUENTD_ARGS
           value: --no-supervisor -q
