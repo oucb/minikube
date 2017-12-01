@@ -188,49 +188,49 @@ const FileScheme = "file"
 
 var LocalkubeCachedImages = []string{
 	// Dashboard
-	"k8s.gcr.io/kubernetes-dashboard-amd64:v1.8.1",
+	"oucb/kubernetes-dashboard-amd64:v1.8.1",
 
 	// DNS
-	"k8s.gcr.io/k8s-dns-kube-dns-amd64:1.14.5",
-	"k8s.gcr.io/k8s-dns-dnsmasq-nanny-amd64:1.14.5",
-	"k8s.gcr.io/k8s-dns-sidecar-amd64:1.14.5",
+	"oucb/k8s-dns-kube-dns-amd64:1.14.5",
+	"oucb/k8s-dns-dnsmasq-nanny-amd64:1.14.5",
+	"oucb/k8s-dns-sidecar-amd64:1.14.5",
 
 	// Addon Manager
-	"k8s.gcr.io/kube-addon-manager:v6.5",
+	"oucb/kube-addon-manager:v6.5",
 
 	// Pause
-	"k8s.gcr.io/pause-amd64:3.0",
+	"oucb/pause-amd64:3.0",
 
 	//Storage Provisioner
-	"gcr.io/k8s-minikube/storage-provisioner:v1.8.0",
+	"oucb/storage-provisioner:v1.8.0",
 }
 
 func GetKubeadmCachedImages(version string) []string {
 	return []string{
 		// Dashboard
-		"k8s.gcr.io/kubernetes-dashboard-amd64:v1.8.1",
+		"oucb/kubernetes-dashboard-amd64:v1.8.1",
 
 		// Addon Manager
-		"k8s.gcr.io/kube-addon-manager:v6.5",
+		"oucb/kube-addon-manager:v6.5",
 
 		// Pause
-		"k8s.gcr.io/pause-amd64:3.0",
+		"oucb/pause-amd64:3.0",
 
 		// DNS
-		"k8s.gcr.io/k8s-dns-kube-dns-amd64:1.14.4",
-		"k8s.gcr.io/k8s-dns-dnsmasq-nanny-amd64:1.14.4",
-		"k8s.gcr.io/k8s-dns-sidecar-amd64:1.14.4",
+		"oucb/k8s-dns-kube-dns-amd64:1.14.4",
+		"oucb/k8s-dns-dnsmasq-nanny-amd64:1.14.4",
+		"oucb/k8s-dns-sidecar-amd64:1.14.4",
 
 		// etcd
-		"k8s.gcr.io/etcd-amd64:3.0.17",
+		"oucb/etcd-amd64:3.0.17",
 
-		"k8s.gcr.io/kube-proxy-amd64:" + version,
-		"k8s.gcr.io/kube-scheduler-amd64:" + version,
-		"k8s.gcr.io/kube-controller-manager-amd64:" + version,
-		"k8s.gcr.io/kube-apiserver-amd64:" + version,
+		"oucb/kube-proxy-amd64:" + version,
+		"oucb/kube-scheduler-amd64:" + version,
+		"oucb/kube-controller-manager-amd64:" + version,
+		"oucb/kube-apiserver-amd64:" + version,
 
 		//Storage Provisioner
-		"gcr.io/k8s-minikube/storage-provisioner:v1.8.0",
+		"oucb/storage-provisioner:v1.8.0",
 	}
 }
 
