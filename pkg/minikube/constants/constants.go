@@ -188,49 +188,49 @@ const FileScheme = "file"
 
 var LocalkubeCachedImages = []string{
 	// Dashboard
-	"oucb/kubernetes-dashboard-amd64:v1.8.1",
+	"registry.cn-shenzhen.aliyuncs.com/oucb/kubernetes-dashboard-amd64:v1.8.1",
 
 	// DNS
-	"oucb/k8s-dns-kube-dns-amd64:1.14.5",
-	"oucb/k8s-dns-dnsmasq-nanny-amd64:1.14.5",
-	"oucb/k8s-dns-sidecar-amd64:1.14.5",
+	"registry.cn-shenzhen.aliyuncs.com/oucb/k8s-dns-kube-dns-amd64:1.14.5",
+	"registry.cn-shenzhen.aliyuncs.com/oucb/k8s-dns-dnsmasq-nanny-amd64:1.14.5",
+	"registry.cn-shenzhen.aliyuncs.com/oucb/k8s-dns-sidecar-amd64:1.14.5",
 
 	// Addon Manager
-	"oucb/kube-addon-manager:v6.5",
+	"registry.cn-shenzhen.aliyuncs.com/oucb/kube-addon-manager:v6.5",
 
 	// Pause
-	"oucb/pause-amd64:3.0",
+	"registry.cn-shenzhen.aliyuncs.com/oucb/pause-amd64:3.0",
 
 	//Storage Provisioner
-	"oucb/storage-provisioner:v1.8.0",
+	"registry.cn-shenzhen.aliyuncs.com/oucb/storage-provisioner:v1.8.0",
 }
 
 func GetKubeadmCachedImages(version string) []string {
 	return []string{
 		// Dashboard
-		"oucb/kubernetes-dashboard-amd64:v1.8.1",
+		"registry.cn-shenzhen.aliyuncs.com/oucb/kubernetes-dashboard-amd64:v1.8.1",
 
 		// Addon Manager
-		"oucb/kube-addon-manager:v6.5",
+		"registry.cn-shenzhen.aliyuncs.com/oucb/kube-addon-manager:v6.5",
 
 		// Pause
-		"oucb/pause-amd64:3.0",
+		"registry.cn-shenzhen.aliyuncs.com/oucb/pause-amd64:3.0",
 
 		// DNS
-		"oucb/k8s-dns-kube-dns-amd64:1.14.4",
-		"oucb/k8s-dns-dnsmasq-nanny-amd64:1.14.4",
-		"oucb/k8s-dns-sidecar-amd64:1.14.4",
+		"registry.cn-shenzhen.aliyuncs.com/oucb/k8s-dns-kube-dns-amd64:1.14.4",
+		"registry.cn-shenzhen.aliyuncs.com/oucb/k8s-dns-dnsmasq-nanny-amd64:1.14.4",
+		"registry.cn-shenzhen.aliyuncs.com/oucb/k8s-dns-sidecar-amd64:1.14.4",
 
 		// etcd
-		"oucb/etcd-amd64:3.0.17",
+		"registry.cn-shenzhen.aliyuncs.com/oucb/etcd-amd64:3.0.17",
 
-		"oucb/kube-proxy-amd64:" + version,
-		"oucb/kube-scheduler-amd64:" + version,
-		"oucb/kube-controller-manager-amd64:" + version,
-		"oucb/kube-apiserver-amd64:" + version,
+		"registry.cn-shenzhen.aliyuncs.com/oucb/kube-proxy-amd64:" + version,
+		"registry.cn-shenzhen.aliyuncs.com/oucb/kube-scheduler-amd64:" + version,
+		"registry.cn-shenzhen.aliyuncs.com/oucb/kube-controller-manager-amd64:" + version,
+		"registry.cn-shenzhen.aliyuncs.com/oucb/kube-apiserver-amd64:" + version,
 
 		//Storage Provisioner
-		"oucb/storage-provisioner:v1.8.0",
+		"registry.cn-shenzhen.aliyuncs.com/oucb/storage-provisioner:v1.8.0",
 	}
 }
 

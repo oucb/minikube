@@ -27,7 +27,7 @@ import (
 
 const (
 	// When these values are updated, also update test/e2e/framework/util.go
-	defaultPodSandboxImageName    = "oucb/pause"
+	defaultPodSandboxImageName    = "registry.cn-shenzhen.aliyuncs.com/oucb/pause"
 	defaultPodSandboxImageVersion = "3.1"
 	// From pkg/kubelet/rkt/rkt.go to avoid circular import
 	defaultRktAPIServiceEndpoint = "localhost:15441"

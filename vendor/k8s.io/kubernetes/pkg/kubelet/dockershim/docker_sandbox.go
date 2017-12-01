@@ -37,7 +37,7 @@ import (
 )
 
 const (
-	defaultSandboxImage = "oucb/pause-amd64:3.1"
+	defaultSandboxImage = "registry.cn-shenzhen.aliyuncs.com/oucb/pause-amd64:3.1"
 
 	// Various default sandbox resources requests/limits.
 	defaultSandboxCPUshares int64 = 2

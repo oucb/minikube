@@ -25,7 +25,7 @@ spec:
   hostNetwork: true
   containers:
   - name: kube-addon-manager
-    image: oucb/kube-addon-manager:v8.6
+    image: registry.cn-shenzhen.aliyuncs.com/oucb/kube-addon-manager:v8.6
     env:
     - name: KUBECONFIG
       value: /var/lib/localkube/kubeconfig

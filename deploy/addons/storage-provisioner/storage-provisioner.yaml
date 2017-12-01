@@ -51,7 +51,7 @@ spec:
   hostNetwork: true
   containers:
   - name: storage-provisioner
-    image: oucb/storage-provisioner:v1.8.1
+    image: registry.cn-shenzhen.aliyuncs.com/oucb/storage-provisioner:v1.8.1
     command: ["/storage-provisioner"]
     imagePullPolicy: IfNotPresent
     volumeMounts:

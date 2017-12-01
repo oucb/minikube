@@ -37,7 +37,7 @@ spec:
     spec:
       containers:
       - name: kubernetes-dashboard
-        image: oucb/kubernetes-dashboard-amd64:v1.8.1
+        image: registry.cn-shenzhen.aliyuncs.com/oucb/kubernetes-dashboard-amd64:v1.8.1
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9090
