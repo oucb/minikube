@@ -167,49 +167,49 @@ const FileScheme = "file"
 
 var LocalkubeCachedImages = []string{
 	// Dashboard
-	"gcr.io/google_containers/kubernetes-dashboard-amd64:v1.6.3",
+	"oucb/kubernetes-dashboard-amd64:v1.6.3",
 
 	// DNS
-	"gcr.io/google_containers/k8s-dns-kube-dns-amd64:1.14.5",
-	"gcr.io/google_containers/k8s-dns-dnsmasq-nanny-amd64:1.14.5",
-	"gcr.io/google_containers/k8s-dns-sidecar-amd64:1.14.5",
+	"oucb/k8s-dns-kube-dns-amd64:1.14.5",
+	"oucb/k8s-dns-dnsmasq-nanny-amd64:1.14.5",
+	"oucb/k8s-dns-sidecar-amd64:1.14.5",
 
 	// Addon Manager
-	"gcr.io/google-containers/kube-addon-manager:v6.4-beta.2",
+	"oucb/kube-addon-manager:v6.4-beta.2",
 
 	// Pause
-	"gcr.io/google_containers/pause-amd64:3.0",
+	"oucb/pause-amd64:3.0",
 
 	//Storage Provisioner
-	"gcr.io/k8s-minikube/storage-provisioner:v1.8.0",
+	"oucb/storage-provisioner:v1.8.0",
 }
 
 func GetKubeadmCachedImages(version string) []string {
 	return []string{
 		// Dashboard
-		"gcr.io/google_containers/kubernetes-dashboard-amd64:v1.6.3",
+		"oucb/kubernetes-dashboard-amd64:v1.6.3",
 
 		// Addon Manager
-		"gcr.io/google-containers/kube-addon-manager:v6.4-beta.2",
+		"oucb/kube-addon-manager:v6.4-beta.2",
 
 		// Pause
-		"gcr.io/google_containers/pause-amd64:3.0",
+		"oucb/pause-amd64:3.0",
 
 		// DNS
-		"gcr.io/google_containers/k8s-dns-kube-dns-amd64:1.14.4",
-		"gcr.io/google_containers/k8s-dns-dnsmasq-nanny-amd64:1.14.4",
-		"gcr.io/google_containers/k8s-dns-sidecar-amd64:1.14.4",
+		"oucb/k8s-dns-kube-dns-amd64:1.14.4",
+		"oucb/k8s-dns-dnsmasq-nanny-amd64:1.14.4",
+		"oucb/k8s-dns-sidecar-amd64:1.14.4",
 
 		// etcd
-		"gcr.io/google_containers/etcd-amd64:3.0.17",
+		"oucb/etcd-amd64:3.0.17",
 
-		"gcr.io/google_containers/kube-proxy-amd64:" + version,
-		"gcr.io/google_containers/kube-scheduler-amd64:" + version,
-		"gcr.io/google_containers/kube-controller-manager-amd64:" + version,
-		"gcr.io/google_containers/kube-apiserver-amd64:" + version,
+		"oucb/kube-proxy-amd64:" + version,
+		"oucb/kube-scheduler-amd64:" + version,
+		"oucb/kube-controller-manager-amd64:" + version,
+		"oucb/kube-apiserver-amd64:" + version,
 
 		//Storage Provisioner
-		"gcr.io/k8s-minikube/storage-provisioner:v1.8.0",
+		"oucb/storage-provisioner:v1.8.0",
 	}
 }
 

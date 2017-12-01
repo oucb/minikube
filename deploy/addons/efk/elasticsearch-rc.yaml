@@ -34,7 +34,7 @@ spec:
     spec:
       containers:
       - name: elasticsearch-logging
-        image: gcr.io/google-containers/elasticsearch:v5.6.2
+        image: oucb/elasticsearch:v5.6.2
         resources:
           limits:
             cpu: 500m
