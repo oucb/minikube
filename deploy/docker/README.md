@@ -72,7 +72,7 @@ spec:
   hostNetwork: true
   containers:
   - name: kube-addon-manager
-    image: k8s.gcr.io/kube-addon-manager:v6.5
+    image: registry.cn-shenzhen.aliyuncs.com/oucb/kube-addon-manager:v6.5
     imagePullPolicy: IfNotPresent
     resources:
       requests:

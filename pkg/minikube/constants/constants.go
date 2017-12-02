@@ -107,14 +107,14 @@ const (
 	DefaultAddonListFormat     = "- {{.AddonName}}: {{.AddonStatus}}\n"
 	DefaultConfigViewFormat    = "- {{.ConfigKey}}: {{.ConfigValue}}\n"
 	DefaultCacheListFormat     = "{{.CacheImage}}\n"
-	GithubMinikubeReleasesURL  = "https://storage.googleapis.com/minikube/releases.json"
-	KubernetesVersionGCSURL    = "https://storage.googleapis.com/minikube/k8s_releases.json"
+	GithubMinikubeReleasesURL  = "https://kubernetes.oss-cn-hangzhou.aliyuncs.com/minikube/releases.json"
+	KubernetesVersionGCSURL    = "https://kubernetes.oss-cn-hangzhou.aliyuncs.com/minikube/k8s_releases.json"
 	DefaultWait                = 20
 	DefaultInterval            = 6
 	DefaultClusterBootstrapper = "kubeadm"
 )
 
-var DefaultIsoUrl = fmt.Sprintf("https://storage.googleapis.com/%s/minikube-%s.iso", minikubeVersion.GetIsoPath(), minikubeVersion.GetIsoVersion())
+var DefaultIsoUrl = fmt.Sprintf("https://kubernetes.oss-cn-hangzhou.aliyuncs.com/%s/minikube-%s.iso", minikubeVersion.GetIsoPath(), minikubeVersion.GetIsoVersion())
 var DefaultIsoShaUrl = DefaultIsoUrl + ShaSuffix
 
 var DefaultKubernetesVersion = version.Get().GitVersion
@@ -127,7 +127,7 @@ func GetProfileFile(profile string) string {
 	return filepath.Join(GetMinipath(), "profiles", profile, "config.json")
 }
 
-var LocalkubeDownloadURLPrefix = "https://storage.googleapis.com/minikube/k8sReleases/"
+var LocalkubeDownloadURLPrefix = "https://kubernetes.oss-cn-hangzhou.aliyuncs.com/minikube/k8sReleases/"
 var LocalkubeLinuxFilename = "localkube-linux-amd64"
 
 // DockerAPIVersion is the API version implemented by Docker running in the minikube VM.
